@@ -26,3 +26,7 @@ export function verifier({ nom, email, telephone }) {
   return erreurs;
 }
 
+/** Message clair si le numéro est déjà utilisé par un autre compte. */
+export function messageDoublon(numero) {
+  return `Le numéro ${numero} est déjà utilisé. Connectez-vous ou utilisez « Mot de passe oublié ».`;
+}
